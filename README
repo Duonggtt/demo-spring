@@ -1,0 +1,41 @@
+Đề bài: Xây dựng hệ thống Quản lý 1 trận của bình nguyên vô tận sử dụng Spring Boot
+
+
+Lớp Tướng: id, name, description, position
+
+Lớp Team: id, name
+
+Lớp Bnvt: id
+
+1 trận Bnvt sẽ có 2 team - 1 team có 5 người:
+
+Xây dựng các service và api để thực hiện các chức năng CRUD.
+
+================================================================================
+
+Ở đây chú ý đọc folder controller, entity, responsitory và service trước nha
+
+Controller : Chứa các api để lấy dữ liệu
+
+Service : Chứa các phương thức logic để thực hiện hay xử lý logic
+
+Responsitory : phần này nó là 1 folder chứa các interface, interface này có tác dụng là tương tác trực tiếp với database
+
+Entity: Chứa các class đối tượng ha
+
+================================================================================
+
+Thế luồng nó sẽ như này:
+
+Khi gọi đến phần api từ Controller → gọi về service → service thực hiện logic để xử lý
+    → gọi về reponsitory để thao tác với database → quay về service
+    → rồi trả dữ liệu ra api ở controller
+
+================================================================================
+
+Thế chạy ròi thì làm sao mà lấy ra dữ liệu để test?
+
+=))) Thì ở đây ta sẽ tập trung vào phần controller ha ( Dùng postman he ):
+
+Ở phần lấy ra danh sách Figures ấy có để 1 ví dụ về đường link của nó
+→ cop cái đó vào postman → Chọn phương thức GET → rồi chạy để lấy ra data :V chỉ có thế thoi
