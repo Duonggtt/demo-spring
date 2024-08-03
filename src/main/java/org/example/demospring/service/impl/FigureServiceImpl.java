@@ -1,13 +1,11 @@
 package org.example.demospring.service.impl;
 
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.example.demospring.entity.Figure;
 import org.example.demospring.exception.NotFoundException;
-import org.example.demospring.responsitory.FigureRepository;
+import org.example.demospring.reponsitory.FigureRepository;
 import org.example.demospring.service.FigureService;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

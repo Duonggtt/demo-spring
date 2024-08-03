@@ -1,4 +1,4 @@
-package org.example.demospring.responsitory;
+package org.example.demospring.reponsitory;
 
 import org.example.demospring.entity.Figure;
 import org.springframework.data.jpa.repository.JpaRepository;
